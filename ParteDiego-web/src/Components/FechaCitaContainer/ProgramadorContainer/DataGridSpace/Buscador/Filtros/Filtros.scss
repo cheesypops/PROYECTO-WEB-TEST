@@ -1,0 +1,19 @@
+.filtros{
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    gap: 2vh;
+
+    min-height: 7vh;
+    width: 60%;
+}
+@media screen and (max-width: 640px){
+    .filtros{
+        width: min-content;
+    }
+}
