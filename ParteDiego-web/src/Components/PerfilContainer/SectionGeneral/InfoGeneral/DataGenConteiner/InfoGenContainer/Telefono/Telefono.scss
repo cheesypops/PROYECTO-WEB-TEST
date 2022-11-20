@@ -44,16 +44,18 @@
         margin: 0;
 
         figure{
-            width: 2.3rem;
-            height: 2.3rem;
+            width: 2rem;
+            height: 2rem;
             margin: 0;
             padding: 0;
 
-            img{
-                height: fit-content;
-                width: fit-content;
+            svg{
+                height: 100%;
+                width: 100%;
 
-                font-size: small;
+                object-fit: fill;
+
+                color: white;
             }
         }
     }

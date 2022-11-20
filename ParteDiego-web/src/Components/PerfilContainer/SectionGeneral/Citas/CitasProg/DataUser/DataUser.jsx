@@ -2,10 +2,12 @@ import React from "react";
 import "./DataUser.scss";
 import DataGen from "./DataGen/DataGen";
 
+import { MdPerson } from "react-icons/md";
+
 const DataUser = ({name, cita}) => {
     return (
     <div className="datauser">
-        <figure><img src="../src/assets/img/PersonIcon.png" alt="user" /></figure>
+        <figure><MdPerson/></figure>
         <DataGen name={name} cita={cita}/>
     </div>)
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import "./C2e.scss";
 
+import { MdPermIdentity } from "react-icons/md";
+
 const C2e = () => {
     return (
     <div className="c2e">
-        <figure><img src="" alt="DUI" /></figure>
+        <figure><MdPermIdentity/></figure>
         <div>
             <input type="text" placeholder="DUI" id="dui" disabled/>
         </div>

@@ -1,3 +1,5 @@
+@import "../../../../assets/sass/variables";
+
 .flechita2{
     display: flex;
 
@@ -13,12 +15,26 @@
     background-color: #fefefe;
 
     figure{
-        width: 4rem;
-        height: 2rem;
+        margin: 0;
+        width: 7rem;
+        height: 4rem;
+
+        svg{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            color: $color-primary;
+
+            object-fit:fill;
+            margin: 0;
+        }
 
         img{
-            height: fit-content;
-            width: fit-content;
+            width: 100%;
+            height: 100%;
+
+            object-fit:fill;
+            margin: 0;
         }
     }
 }

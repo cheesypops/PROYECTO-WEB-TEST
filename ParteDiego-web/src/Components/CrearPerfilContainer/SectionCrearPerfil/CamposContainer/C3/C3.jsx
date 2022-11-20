@@ -1,10 +1,12 @@
 import React from "react";
 import "./C3.scss";
 
+import { MdBloodtype } from "react-icons/md";
+
 const C3 = () => {
     return (
     <div className="c3">
-        <figure><img src="" alt="Sangre" /></figure>
+        <figure><MdBloodtype/></figure>
         <div action="">
             <select name="Tipo-Sangre" id="Tipo-Sangre" placeholder="Tipo de sangre">
                 <option value="ORH+">O+</option>

@@ -1,10 +1,12 @@
 import React from "react";
 import "./Dui.scss";
 
+import { MdPortrait } from "react-icons/md";
+
 const Dui = ({dui}) => {
     return (
     <div className="dui">
-        <div><figure><img src="" alt="dui" /></figure></div>
+        <div><figure><MdPortrait/></figure></div>
         <div><p>{dui}</p></div>
     </div>)
 }
