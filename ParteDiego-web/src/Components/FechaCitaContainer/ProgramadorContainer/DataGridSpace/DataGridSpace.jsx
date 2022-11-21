@@ -3,6 +3,7 @@ import "./DataGridSpace.scss";
 import Fechas from "./Fechas/Fechas";
 import Buscador from "./Buscador/Buscador";
 
+
 const DataGridSpace = ({dui}) => {
     //obtener aqui los horarios disponibles
     const horarios = [
@@ -33,6 +34,9 @@ const DataGridSpace = ({dui}) => {
         }
     ]
 
+    //hacer uso de los estados para cambiar el arreglo de horarios q se manda
+    //una consulta q retorne los horarios de manera normal y otra consulta donde se obtenga el mes y año del submit del "buscador"
+    //y en base a estos hacer la consulta para q retorne el mismo arreglo pero con las citas de ese mes y año
 
     return (
     <div className="datagridspace">
