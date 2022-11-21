@@ -1,10 +1,10 @@
 import React from "react";
 import "./SeleccionarFecha.scss";
 
-const SeleccionarFecha = () => {
+const SeleccionarFecha = ({type}) => {
     return (
     <div className="seleccionarfecha">
-        <button>Seleccionar</button>
+        <button type={type}>Seleccionar</button>
     </div>)
 }
 

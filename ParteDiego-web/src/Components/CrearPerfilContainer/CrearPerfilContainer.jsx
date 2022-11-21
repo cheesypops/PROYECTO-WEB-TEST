@@ -52,6 +52,51 @@ const CrearPerfilContainer = () => {
         }
     }
 
+    //------------------------FUNCION DE VALIDACION DE DATOS------------------------------
+    {/** const validacion = async (perfil) =>{
+        let valido = true;
+        console.log(perfil.dui.length);
+        console.log(parseInt(perfil.dui[1], 10))
+
+        console.log("antes del if")
+        if((perfil.dui).length != 10){
+            console.log("entro al if")
+            Swal.fire({
+                title: 'DUI no válido',
+                text: "Verifique su numero de dui",
+                icon: 'error',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Entiendo'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    return valido = false;
+                }
+            })
+            console.log("despues de retornar la mierda esta")
+        }else{
+            console.log("entro al else")
+            let valdui = false;
+            for(let i=0; i < 10; i++){
+                console.log(perfil.dui[i]);
+                if(i === 9 && perfil.dui[i] != "-"){
+                    valdui = false;
+                }
+                else if(i != 9 && parseInt(perfil.dui[i], 10) === NaN){
+                    console.log("si se verifico")
+                    valdui = false;
+                }
+            }
+            if(!valdui){
+                return valido = false;
+            }else{
+                return valido = true;
+            }
+            
+        }
+        console.log("despues del if")
+    } */}
+    
+
     //VARIABLE Q ALMACENARA LOS DATOS A GUARDAR---------------------------------------------------------------
     let dataPerfil = {
         email: null,
@@ -98,7 +143,7 @@ const CrearPerfilContainer = () => {
                     dataPerfil.email = (data.get("email"));
                     dataPerfil.dui = (data.get("dui"));
                     dataPerfil.sangre = (data.get("Tipo-Sangre"));
-                    dataPerfil.nacimiento = (data.get("nacimiento"));
+                    dataPerfil.nacimiento = (data.get("nacimiento"));//lo guarda como yyyy-mm-dd
                     dataPerfil.genero = (data.get("genero"));
                     dataPerfil.tel = (data.get("tel"));
                     dataPerfil.nameE = (data.get("nameE"));
@@ -106,14 +151,17 @@ const CrearPerfilContainer = () => {
                     dataPerfil.password = (data.get("password"));
                     dataPerfil.name = (data.get("name"));
 
-                    //CREAR FUNCION Q VERIFIQUE LOS DATOS ANTES E LLAMAR A LA FUNCION DE INSERCION----------------------------------
+                    //CREAR FUNCION Q VERIFIQUE LOS DATOS ANTES DE LLAMAR A LA FUNCION DE INSERCION----------------------------------
+                    
                     CrearPerfil(dataPerfil);//llama la funcion q crea el perfil
+
+                    
 
                 }else{//no ha puesto la misma contraseña en ambos campos
                     Swal.fire({
                         icon: 'error',
                         title: 'Oh no...',
-                        text: 'Corrobore los campos de contraseña...',
+                        text: 'Corrobore los campos de contraseña, hay discrepacia de datos...',
                         footer: '<a href=""></a>'
                     })
                 }

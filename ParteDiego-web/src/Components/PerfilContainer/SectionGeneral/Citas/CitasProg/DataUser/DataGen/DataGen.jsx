@@ -8,7 +8,7 @@ const DataGen = ({name, cita}) => {
     return (
     <div className="datagen">
         <UserName name={name} lugar={cita.lugar}/>
-        <HoraConf hora={cita.hora} confirmacion={cita.confirmacion}/>
+        <HoraConf hora={cita.hora}/>
         <Fecha fecha={cita.fechaCita}/>
     </div>)
 }

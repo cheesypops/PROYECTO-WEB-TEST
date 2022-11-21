@@ -40,7 +40,6 @@ const Citas = ({dui, name}) => {
         const cita = citas.find((cita) => cita.duiUser === dui);
 
         if (!cita) {
-            console.log("no hay citas con ese id");
             return [];
         }
 

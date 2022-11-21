@@ -5,12 +5,12 @@ import ProgramadorContainer from "./ProgramadorContainer/ProgramadorContainer";
 import FlechitaC from "./FlechitaC/FlechitaC";
 import AgregarGoogle from "./AgregarGoogle/AgregarGoogle";
 
-const FechaCitaContainer = () => {
+const FechaCitaContainer = ({perfil}) => {
     return (
     <div className="fechacitacontainer">
         <SectionBannerCita/>
         <FlechitaC/>
-        <ProgramadorContainer/>
+        <ProgramadorContainer dui={perfil.dui}/>
         <AgregarGoogle/>
     </div>)
 }

@@ -2,10 +2,10 @@ import React from "react";
 import "./ProgramadorContainer.scss";
 import DataGridSpace from "./DataGridSpace/DataGridSpace";
 
-const ProgramadorContainer = () => {
+const ProgramadorContainer = ({dui}) => {
     return (
     <div className="programadorcontainer">
-        <DataGridSpace/>
+        <DataGridSpace dui={dui}/>
     </div>)
 }
 

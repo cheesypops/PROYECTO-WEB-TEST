@@ -8,7 +8,8 @@ const C2 = () => {
     <div className="c2">
         <figure><MdPermIdentity/></figure>
         <div>
-            <input type="text" placeholder="DUI" id="dui" name="dui"/>
+            <input type="text" placeholder="DUI" id="dui" name="dui" pattern="[0-9]{8}-[0-9]{1}" 
+            title="El formato de dui debe contener solo números separando el último digito con '-', ej: 12345678-1"/>
         </div>
     </div>)
 }

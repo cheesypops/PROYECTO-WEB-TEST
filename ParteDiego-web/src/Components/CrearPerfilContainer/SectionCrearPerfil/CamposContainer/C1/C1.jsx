@@ -8,7 +8,8 @@ const C1 = () => {
     <div className="c1">
         <figure><MdOutlineEmail/></figure>
         <div>
-            <input type="email" placeholder="Correo electrónico" id="email" name="email"/>
+            <input type="email" placeholder="Correo electrónico" id="email" name="email" pattern=".+@gmail.com"
+            title="Solo se aceptan correos de google (gmail), ej: algo@gmail.com"/>
         </div>
     </div>)
 }

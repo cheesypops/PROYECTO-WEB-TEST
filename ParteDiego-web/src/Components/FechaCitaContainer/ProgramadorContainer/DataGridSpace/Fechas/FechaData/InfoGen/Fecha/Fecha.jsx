@@ -1,10 +1,10 @@
 import React from "react";
 import "./Fecha.scss";
 
-const Fecha = () => {
+const Fecha = ({fecha}) => {
     return (
     <div className="fecha">
-        <p>07/01 del 2022</p>{/*aqui insertar la fecha, quiza hacer funcion q de formato */}
+        <p>{fecha}</p>{/*aqui insertar la fecha, quiza hacer funcion q de formato */}
     </div>)
 }
 

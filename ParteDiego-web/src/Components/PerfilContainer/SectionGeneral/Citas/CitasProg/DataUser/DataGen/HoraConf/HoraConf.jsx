@@ -1,7 +1,7 @@
 import React from "react";
 import "./HoraConf.scss";
 
-const HoraConf = ({hora, confirmacion}) => {
+const HoraConf = ({hora}) => {
     {/**VER COMO HACER LO DE LA CONFIRMACION */}
     return (
     <div className="horaconf">

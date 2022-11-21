@@ -4,11 +4,11 @@ import InfoGen from "./InfoGen/InfoGen";
 
 import { MdEditCalendar } from "react-icons/md";
 
-const FechaData = () => {
+const FechaData = ({horario}) => {
     return (
     <div className="fechadata">
         <figure><MdEditCalendar/></figure>
-        <InfoGen/>
+        <InfoGen horario={horario}/>
     </div>)
 }
 

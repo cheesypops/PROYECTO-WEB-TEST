@@ -8,7 +8,7 @@ const C4 = () => {
     <div className="c4">
         <figure><MdDateRange/></figure>
         <div>
-            <input type="date" placeholder="Fecha de nacimiento" id="nacimiento" name="nacimiento"/>
+            <input type="date" placeholder="Fecha de nacimiento" id="nacimiento" name="nacimiento" />
         </div>
     </div>)
 }

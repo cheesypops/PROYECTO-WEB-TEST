@@ -36,7 +36,7 @@ function App() {
           <Routes>
             <Route path="/perfil" element={<PerfilContainer perfil={persona}/>} />
             <Route path="/requisitos" element={<RequisitosContainer perfil={persona}/>} />
-            <Route path="/seleccionar-fecha" element={<FechaCitaContainer/>} />
+            <Route path="/seleccionar-fecha" element={<FechaCitaContainer perfil={persona}/>} />
             <Route path="/crear-perfil" element={<CrearPerfilContainer/>} />
             <Route path="/editar-perfil" element={<EditarPerfilContainer perfil={persona}/>} />
             <Route path="/" element={<VistaPrincipalContainer/>} />
