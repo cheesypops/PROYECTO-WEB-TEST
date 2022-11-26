@@ -15,6 +15,7 @@
     "react-router": "^6.4.3",
     "react-router-dom": "6",
     "react-router-native": "^6.4.3",
+    "react-tooltip": "^4.5.1",
     "sweetalert2": "^11.6.8"
   },
   "devDependencies": {

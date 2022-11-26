@@ -1,14 +1,19 @@
 import React from "react";
 import "./Re5.scss";
 
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
+import ReactTooltip from 'react-tooltip';
+
 
 const Re5 = () => {
     return (
     <div className="re5">
         <div className="req">
-            <div className="info" id="info5">?</div>
+            <div className="info" data-tip data-for="info5">?</div>
+
+            <ReactTooltip id="info5" place="top" type="info" effect="solid" padding="1.5vh">
+                Una zona endémica es una zona donde ha habido un brote de virus o múltiples casos de contagios.
+            </ReactTooltip>
+
             <div className="question">
                 <p>¿Ha visitado zonas endémicas?</p>
             </div>
@@ -21,8 +26,5 @@ const Re5 = () => {
     </div>)
 }
 
-tippy('#info5', {
-    content: "Una zona endémica es una zona donde ha habido un brote de virus o múltiples casos de contagios.",
-});
 
 export default Re5

@@ -1,14 +1,19 @@
 import React from "react";
 import "./Re6.scss";
 
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
+import ReactTooltip from 'react-tooltip';
+
 
 const Re6 = () => {
     return (
     <div className="re6">
         <div className="req">
-            <div className="info" id="info6">?</div>
+            <div className="info" data-tip data-for="info1">?</div>
+
+            <ReactTooltip id="info6" place="top" type="info" effect="solid" padding="1.5vh">
+                Algunos sintomas pueden ser mareos, desmayos y confusión.
+            </ReactTooltip>
+
             <div className="question">
                 <p>¿Ha presentado indicios de niveles altos o bajos de presión arterial en los últimos 5 días?</p>
             </div>
@@ -21,8 +26,5 @@ const Re6 = () => {
     </div>)
 }
 
-tippy('#info6', {
-    content: "Algunos sintomas pueden ser mareos, desmayos y confusión.",
-});
 
 export default Re6

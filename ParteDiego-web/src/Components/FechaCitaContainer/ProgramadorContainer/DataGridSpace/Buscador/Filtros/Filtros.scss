@@ -1,7 +1,10 @@
+@import "../../../../../../assets/sass/variables";
+
 .filtros{
     margin: 0;
 
     display: flex;
+    flex-wrap: wrap;
 
     justify-content: center;
     align-items: center;
@@ -9,11 +12,33 @@
 
     gap: 2vh;
 
-    min-height: 7vh;
-    width: 60%;
+    min-height: 9vh;
+    width: 80%;
+
+    h1{
+        margin: 0;
+        font-family: $theme-title-font;
+    }
+    div{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1vh;
+    }
 }
 @media screen and (max-width: 640px){
     .filtros{
-        width: min-content;
+        width: max-content;
+        min-height: min-content;
+        flex-wrap: wrap;
+
+        h1{
+            text-align: center;
+            width: 100%;
+        }
     }
 }

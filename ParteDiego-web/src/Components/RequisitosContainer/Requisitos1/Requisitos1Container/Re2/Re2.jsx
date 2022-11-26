@@ -1,14 +1,19 @@
 import React from "react";
 import "./Re2.scss";
 
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
+import ReactTooltip from 'react-tooltip';
+
 
 const Re2 = () => {
     return (
     <div className="re2">
         <div className="req">
-            <div className="info" id="info2">?</div>
+            <div className="info" data-tip data-for="info2">?</div>
+
+            <ReactTooltip id="info2" place="top" type="info" effect="solid" padding="1.5vh">
+                Mínimo de 30kg y un máximo de 150kg.
+            </ReactTooltip>
+
             <div className="question">
                 <p>Ingrese su peso</p>
             </div>
@@ -21,8 +26,5 @@ const Re2 = () => {
     </div>)
 }
 
-tippy('#info2', {
-    content: "Mínimo de 30kg y un máximo de 150kg.",
-});
 
 export default Re2

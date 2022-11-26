@@ -1,14 +1,19 @@
 import React from "react";
 import "./Re3.scss";
 
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
+import ReactTooltip from 'react-tooltip';
+
 
 const Re3 = ({onChange}) => {
     return (
     <div className="re3">
         <div className="req">
-            <div className="info" id="info3">?</div>
+            <div className="info" data-tip data-for="info3">?</div>
+
+            <ReactTooltip id="info3" place="top" type="info" effect="solid" padding="1.5vh">
+                Mínimo de 30kg y un máximo de 150kg.
+            </ReactTooltip>
+
             <div className="question">
                 <p>¿Tiene tatuajes o piercings?</p>
             </div>
@@ -21,8 +26,5 @@ const Re3 = ({onChange}) => {
     </div>)
 }
 
-tippy('#info3', {
-    content: "Cualquier tipo de piercing o tamaño de tatuaje.",
-});
 
 export default Re3

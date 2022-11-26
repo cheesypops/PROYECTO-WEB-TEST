@@ -1,13 +1,24 @@
 .buscador{
     margin: 0;
 
-    height: 8vh;
+    min-height: 8vh;
     width: 70%;
 
     display: flex;
+    flex-wrap: wrap;
 
     justify-content: center;
     align-items: center;
     align-content: center;
 
+    gap: 0.5rem;
+
+}
+
+@media screen and (max-width: 640px){
+    .buscador{
+        margin: 0;
+        flex-wrap: wrap;
+        height: max-content;
+    }
 }
