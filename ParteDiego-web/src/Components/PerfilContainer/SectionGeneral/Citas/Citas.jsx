@@ -8,24 +8,28 @@ const Citas = ({dui, name}) => {
     {/**CREACION DE ARREGLO DE CITAS */}
     const citas = [
         {
+            _id: "fdsfsdfsdgdasgsg",
             duiUser: "12345678-8",
             fechaCita: "07/01/2022",
             confirmacion: true,
             lugar: "Hospital Nacional",
             hora: "17:00"
         },{
+            _id: "fdsfsdfsdgdasgsgass",
             duiUser: "12345678-6",
             fechaCita: "07/02/2022",
             confirmacion: true,
             lugar: "Hospital Nacional",
             hora: "17:00"
         },{
+            _id: "fdsfsdfadsdsadasdgdasgsg",
             duiUser: "12345678-6",
             fechaCita: "07/07/2022",
             confirmacion: true,
             lugar: "Hospital Nacional",
             hora: "17:00"
         },{
+            _id: "fdsfsfhghhdfsdgdasgsg",
             duiUser: "12345678-8",
             fechaCita: "07/04/2022",
             confirmacion: true,

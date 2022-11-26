@@ -8,24 +8,28 @@ const DataGridSpace = ({dui}) => {
     //obtener aqui los horarios disponibles
     const horarios = [
         {
+            _id: "aaaaaaaaaaaaaa",
             fechaCita: "07/01/2022",
             lugar: "Hospital Nacional",
             hora: "17:00",
             cupos: 20,
             ocupados: 7
         },{
+            _id: "aaaavaaaaaaaaa",
             fechaCita: "07/08/2022",
             lugar: "Hospital ganga",
             hora: "18:00",
             cupos: 20,
             ocupados: 9
         },{
+            _id: "aaaaaaaaaaaaoa",
             fechaCita: "07/01/2022",
             lugar: "Hospital pepe",
             hora: "17:00",
             cupos: 20,
             ocupados: 7
         },{
+            _id: "aaaaaaaaaaaaia",
             fechaCita: "07/01/2022",
             lugar: "Hospital no",
             hora: "12:00",

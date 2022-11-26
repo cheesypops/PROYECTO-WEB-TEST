@@ -15,7 +15,7 @@ const CitasProg = ({name, citas}) => {
     return (
     <div className="citasprog">
         {citas.map((cita) => {
-            return (<DataUser name={name} cita={cita}/>);
+            return (<DataUser key={cita._id} name={name} cita={cita}/>);
         })}    
     </div>)
 }

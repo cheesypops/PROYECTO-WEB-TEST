@@ -33,7 +33,7 @@ const Fechas = ({horarios, dui}) => {
     return (
     <form className="fechas" onSubmit={onSubmitHandler}>
         {horarios.map((horario) => {
-            return (<FechaData horario={horario}/>);
+            return (<FechaData key={horario._id} horario={horario}/>);
         })}
     </form>)
 }
