@@ -25,7 +25,7 @@ const Fechas = ({horarios, dui}) => {
 
 
         const data = new FormData(e.target);
-        console.log(data.get("fecha"));
+        console.log(data.key);
 
 
     }
